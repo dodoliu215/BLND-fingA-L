@@ -15,9 +15,10 @@ function mobile(){
     // for(let b=1; b<5; b++){
     //   line(0, blockY*b, deviceX, blockY*b);
     // }
+    cnv.touchStarted(mobileShow);
 }
 
-function touchStarted() {
+function mobileShow() {
     if (getAudioContext().state !== 'running') {
       getAudioContext().resume();
     }
