@@ -5,21 +5,24 @@ function mobile(){
     blockY = deviceY / 5;
     blockX = deviceX / 2;
 
-    //畫線
-    //中間切一半
-    stroke(0);
-    strokeWeight(1);
-    line(blockX, 0, blockX, deviceY);
+    // //畫線
+    // //中間切一半
+    // stroke(0);
+    // strokeWeight(1);
+    // line(blockX, 0, blockX, deviceY);
   
-    //橫的平分5等分
-    for(let b=1; b<5; b++){
-      line(0, blockY*b, deviceX, blockY*b);
+    // //橫的平分5等分
+    // for(let b=1; b<5; b++){
+    //   line(0, blockY*b, deviceX, blockY*b);
+    // }
+}
+
+function touchStarted() {
+    if (getAudioContext().state !== 'running') {
+      getAudioContext().resume();
     }
 
     for (let i = 0; i < touches.length; i++) {
-        touches[i].x;
-        touches[i].y;
-
         if(touches[i].x > blockX){
             //a
             if(touches[i].y >= 0 && touches[i].y <= blockY){
@@ -91,6 +94,8 @@ function mobile(){
         }
     }
 }
+
+
 
 function touchMoved() {
     return false;
