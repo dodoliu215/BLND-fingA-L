@@ -1,4 +1,5 @@
 let device; //判斷是電腦還是手機
+let cnv;
 
 let anim = [];
 let anim_max = 10;
@@ -55,7 +56,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  cnv = createCanvas(windowWidth,windowHeight);
   angleMode(DEGREES);
 
   //count
