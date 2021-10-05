@@ -1,0 +1,19 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+/* @font-face {
+  font-family: NotoSansMono;
+  src: url(font/NotoSansMono-VariableFont_wdth\wght.ttf) format("opentype");
+}
+
+.font {
+  font-size: 20pt;
+  letter-spacing: 0.01em;
+  font-family: NotoSansMono;
+} */
