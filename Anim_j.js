@@ -13,8 +13,8 @@ class Anim_j{
     this.c2 = this.c2 -= 13;  //由下往上升起
     this.c1 = this.c1 += 2;  //慢慢往右流動
 
-    if(this.c2 <= 180){
-      this.c2 = 180; //波浪高度維持
+    if(this.c2 <= height/5){
+      this.c2 = height/5; //波浪高度維持
       this.c1 = this.c1 += 6; //往右跑讓波浪持續流動
     }
     if(this.c1 >= 500){
@@ -32,6 +32,7 @@ class Anim_j{
     }
   }
 }
+
 
 
 
