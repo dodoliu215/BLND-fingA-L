@@ -22,7 +22,7 @@ function mobile(){
           }
         
           
-        for (let i = 0; i < touches.length; i++) {
+        for (let i = 1; i <= touches.length; i++) {
             if(touches[i].x > blockX){
                 //a
                 if(touches[i].y >= 0 && touches[i].y <= blockY){
